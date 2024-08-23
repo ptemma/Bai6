@@ -18,7 +18,7 @@ namespace TCPChat
     public partial class Server : Form
     {
         private static TcpListener server;
-        private static readonly string Dir = "D:/B1909971/";
+        private static readonly string Dir = "D:/B2014625/";
         private static readonly string Extension = ".txt";
 
         public Server()
@@ -174,6 +174,11 @@ namespace TCPChat
                 return "Dang ky thanh cong";
             }
             else return "102. Tai khoan da ton tai";
+        }
+
+        private void Server_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

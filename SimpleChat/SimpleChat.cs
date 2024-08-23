@@ -39,7 +39,7 @@ namespace SimpleChat
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("connect "+ ex.Message);
             }
         }
 
@@ -48,7 +48,7 @@ namespace SimpleChat
             try
             {
                 byte[] msg = new byte[1024];
-                msg = Encoding.UTF8.GetBytes(txtMsg.Text.Trim());
+                msg = Encoding.UTF8.GetBytes(txtMsg.Text);
                 udpClient.Send(msg, msg.Length, txtIPR.Text.Trim(), int.Parse(txtPortR.Text.Trim()));
                 rtxMsg.Text += "Send: " + txtMsg.Text + "\r\n";
             }
@@ -89,6 +89,8 @@ namespace SimpleChat
             return s;
         }
 
+
+
         private void InputConfig(bool state)
         {
             btnConnect.Enabled = state;
@@ -97,6 +99,11 @@ namespace SimpleChat
             txtPortR.ReadOnly = !state;
 
             btnSend.Enabled = !state;
+        }
+
+        private void SimpleChat_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -37,24 +37,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(31, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Port";
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(47, 6);
+            this.txtPort.Location = new System.Drawing.Point(63, 7);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(164, 20);
+            this.txtPort.Size = new System.Drawing.Size(217, 22);
             this.txtPort.TabIndex = 1;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(217, 4);
+            this.btnStart.Location = new System.Drawing.Point(289, 5);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(100, 28);
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "Start Server";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -62,23 +65,26 @@
             // 
             // rtxInfo
             // 
-            this.rtxInfo.Location = new System.Drawing.Point(15, 32);
+            this.rtxInfo.Location = new System.Drawing.Point(20, 39);
+            this.rtxInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtxInfo.Name = "rtxInfo";
-            this.rtxInfo.Size = new System.Drawing.Size(277, 283);
+            this.rtxInfo.Size = new System.Drawing.Size(368, 347);
             this.rtxInfo.TabIndex = 3;
             this.rtxInfo.Text = "";
             // 
             // Server
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 327);
+            this.ClientSize = new System.Drawing.Size(411, 402);
             this.Controls.Add(this.rtxInfo);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Server";
             this.Text = "Server";
+            this.Load += new System.EventHandler(this.Server_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
